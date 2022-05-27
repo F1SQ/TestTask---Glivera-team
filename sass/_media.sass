@@ -1,0 +1,128 @@
+@media (max-width : 1200px)
+    .container
+        width: 940px
+
+@media (max-width : 992px)
+    .container
+        width: 730px
+    .title
+        font-size:
+    .item-products
+        padding: 10px 15px
+        .item
+            &-labels
+                margin: 0 0 10px 0
+            &-name
+                font-size: 18px
+                margin: 0 0 10px 0
+            &-label
+                padding: 4px 8px
+            &:not(:last-child)
+                margin: 0 5px 0 0
+            &-rating
+                column-gap: 3px
+        .price
+            &-current
+                flex-direction: column
+            &-cashback
+                margin: 7px 0 0 0
+    .item
+        &-buttons
+            row-gap: 10px
+            &__links
+                column-gap: 10px
+                img
+                    width: 20px
+                    height: 20px
+        &-button
+            &__buy
+                width: 100%
+                font-size: 14px
+                padding: 8px 10px
+            // &__heart, &__compare
+
+@media (max-width : 767px)
+    body
+        padding: 40px 0
+    .container
+        width: 540px
+    .products
+        padding: 40px 0
+        background-color: #eeeeee
+        &-cards
+            gap: 10px
+            padding: 10px
+    .item
+        &-products
+            padding: 7px 10px
+            .item
+                &-number
+                    font-size: 9px
+                &-name
+                    font-size: 16px
+                &-rating
+                    column-gap: 1px
+            .price
+                &-item
+                    .price
+                        &-wrapper
+                            padding: 15px 0 10px 0
+                        &-title
+                            font-size: 10px
+                        &-current
+                            font-size: 18px
+                        &-cashback
+                            font-size: 9px
+                            margin: 5px 0 0 0
+                        &-prev
+                            font-size: 14px
+        &-buttons
+            flex-direction: column-reverse
+
+@media (max-width : 576px)
+    .container
+        width: 100%
+        padding: 0 15px
+    .products-cards
+        grid-template-columns: repeat(2, 1fr)
+        .item
+            &-products
+                text-align: center
+            &-rating
+                justify-content: center
+                &__text
+                    display: none
+            &-labels
+                justify-content: center
+    .price
+        &-item
+            margin: 0 0 10px 0
+            .price
+                &-wrapper
+                    justify-content: center
+                &-title
+                    align-self: center
+                &-block
+                    align-items: center
+@media (max-width : 425px)
+    body
+        padding: 20px 0
+    .products
+        padding: 20px 0
+        &-cards
+            padding: 0
+            .item
+                &-rating
+                    display: none
+                &-buttons
+                    row-gap: 5px
+            .price-item
+                .price
+                    &-wrapper
+                        padding: 0
+                    &-current
+                        font-size: 16px
+    .item-products
+        .item
+            &-name
+                font-size: 14px
